@@ -66,7 +66,7 @@ the two brands from looking alike in use.
 
 ## The wordmark
 
-Archivo ExtraBold 800, caps, tracked to **−0.022em**. That value is fixed: the horizontal
+Drawn artwork, set in caps and tracked to **−0.022em**. Those values are fixed: the horizontal
 lockup measures 376.5 × 100 units, and in the stacked lockup the wordmark is set at
 17.356 so its width matches the mark exactly at 100 units.
 
@@ -82,11 +82,13 @@ on the descriptor.
 Both SIL OFL.
 
 The wordmark is drawn artwork, not a font setting. Use the lockup files.
+It is not part of the type system and is not offered for download anywhere in
+this library — that is deliberate.
 
 ## Notes on the files
 
 The one-color lockups are genuinely single-color, descriptor included. The lockup SVGs
-carry the wordmark as live text in Archivo — install the font or use the PNG. Every text
+carry the wordmark as live text. For print, use the PNG or request outlined vectors. Every text
 element sets `textLength` to its true measured width, so a fallback font normalizes to
 the same box rather than reflowing. Outlined SVG and vector EPS for print vendors are in
 production.
