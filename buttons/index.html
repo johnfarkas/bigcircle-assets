@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Big Circle Auctions — Buttons</title>
+<meta name="description" content="Big Circle Auctions button styles — four types, three sizes, every state, with CSS.">
+<link rel="icon" href="../assets/logo/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Familjen+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="mast"><div class="wrap">
+  <a class="home" href="../index.html"><svg class="tile" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="45.5" fill="none" stroke="#11202A" stroke-width="7"/><path fill="#C24138" d="M50 42.8A216.07 216.07 0 0 1 51.69 25.53A11 11 0 0 1 73.67 25.83A31.02 31.02 0 0 0 50 42.8Z"/><path fill="#D4792F" d="M56.24 46.4A216.07 216.07 0 0 1 72.04 39.23A11 11 0 0 1 82.76 58.42A31.02 31.02 0 0 0 56.24 46.4Z"/><path fill="#E0A32B" d="M56.24 53.6A216.07 216.07 0 0 1 70.35 63.7A11 11 0 0 1 59.09 82.58A31.02 31.02 0 0 0 56.24 53.6Z"/><path fill="#008C76" d="M50 57.2A216.07 216.07 0 0 1 48.31 74.47A11 11 0 0 1 26.33 74.17A31.02 31.02 0 0 0 50 57.2Z"/><path fill="#1F6C8C" d="M43.76 53.6A216.07 216.07 0 0 1 27.96 60.77A11 11 0 0 1 17.24 41.58A31.02 31.02 0 0 0 43.76 53.6Z"/><path fill="#8A3A52" d="M43.76 46.4A216.07 216.07 0 0 1 29.65 36.3A11 11 0 0 1 40.91 17.42A31.02 31.02 0 0 0 43.76 46.4Z"/></svg><span class="nm"><b>BIG CIRCLE</b><i>AUCTIONS</i></span></a>
+  <nav>
+    <a href="../logo/index.html">Logo</a>
+    <a href="../color/index.html">Color</a>
+    <a href="../typography/index.html">Typography</a>
+    <a href="../buttons/index.html" aria-current="page">Buttons</a>
+  </nav>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <span class="eyebrow">Assets</span>
+  <h1>Buttons</h1>
+  <p class="lede">Patina Deep carries every action. One primary button per view, and the rest recede &mdash; if two things on a screen are both the most important, neither is.</p>
+</div></div>
+<section><div class="wrap">
+  <h2>The four types</h2>
+  <div class="btnrow">
+    <button class="btn btn-primary" type="button">Browse open auctions</button>
+    <button class="btn btn-secondary" type="button">Submit an asset</button>
+    <button class="btn btn-tertiary" type="button">View all 14</button>
+    <button class="btn btn-danger" type="button">Withdraw bid</button>
+  </div>
+  <div class="rules">
+    <div><h4>Primary</h4><p>Patina Deep, white text, 6.0:1. The single most important action in the view. One per screen.</p></div>
+    <div><h4>Secondary</h4><p>White with a Slate 300 border. The alternative path &mdash; equally valid, less urgent.</p></div>
+    <div><h4>Tertiary</h4><p>Patina Deep text with no container. Navigational and low-stakes actions.</p></div>
+    <div><h4>Destructive</h4><p>Cinnabar. Withdrawing, cancelling, deleting. Always paired with a confirmation.</p></div>
+  </div>
+</div></section>
+<section><div class="wrap">
+  <h2>Sizes</h2>
+  <p class="sub">Default is 48&nbsp;px tall, which clears the 44&nbsp;px minimum touch target with room to spare. Small is for dense tables and toolbars only; it should never be the primary action on a page.</p>
+  <div class="btnrow">
+    <button class="btn btn-primary btn-lg" type="button">Large &middot; 56</button>
+    <button class="btn btn-primary" type="button">Default &middot; 48</button>
+    <button class="btn btn-primary btn-sm" type="button">Small &middot; 38</button>
+  </div>
+</div></section>
+<section><div class="wrap">
+  <h2>States</h2>
+  <p class="sub">Hover darkens to Patina Dark. Focus draws a 3&nbsp;px Patina ring offset by 2&nbsp;px, so it stays visible on both light and dark grounds. Disabled drops to Slate 100 with Slate 500 text and takes no border.</p>
+  <div class="btnrow">
+    <button class="btn btn-primary" type="button">Default</button>
+    <button class="btn btn-primary" type="button" style="background:#005A4B">Hover</button>
+    <button class="btn btn-primary" type="button" style="outline:3px solid #008C76;outline-offset:2px">Focus</button>
+    <button class="btn btn-primary" type="button" disabled>Disabled</button>
+  </div>
+</div></section>
+<section><div class="wrap">
+  <h2>On ink</h2>
+  <p class="sub">Primary keeps Patina Deep, which reads at 3.6:1 against ink &mdash; enough for a 16&nbsp;px semibold label inside a filled shape. Secondary switches to a white outline.</p>
+  <div class="onink">
+    <div class="btnrow" style="margin-top:0">
+      <button class="btn btn-primary" type="button">Browse open auctions</button>
+      <button class="btn btn-secondary" type="button">Submit an asset</button>
+    </div>
+  </div>
+</div></section>
+<section><div class="wrap">
+  <h2>Writing the label</h2>
+  <div class="rules">
+    <div><h4>Name the action</h4><p>&ldquo;Submit an asset&rdquo;, not &ldquo;Submit&rdquo;. The label should make sense read on its own, away from the heading above it.</p></div>
+    <div><h4>Sentence case</h4><p>Capitalize the first word only. No all-caps buttons anywhere in the product.</p></div>
+    <div><h4>Two to four words</h4><p>Long enough to be specific, short enough not to wrap at any width.</p></div>
+    <div><h4>Never &ldquo;Click here&rdquo;</h4><p>Or &ldquo;Learn more&rdquo; on its own. Say what is on the other side.</p></div>
+  </div>
+</div></section>
+<section><div class="wrap">
+  <h2>The CSS</h2>
+  <pre>.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+     height:48px;padding:0 24px;border-radius:3px;
+     font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:16px;font-weight:600;
+     line-height:1;border:1.5px solid transparent;cursor:pointer;
+     transition:background .12s,border-color .12s,color .12s}
+
+.btn-primary  {background:#00705E;color:#fff}
+.btn-primary:hover{background:#005A4B}
+
+.btn-secondary{background:#fff;color:#11202A;border-color:#C3CDD6}
+.btn-secondary:hover{border-color:#11202A}
+
+.btn-tertiary {background:none;color:#00705E;padding:0 4px;height:auto}
+.btn-tertiary:hover{text-decoration:underline;text-underline-offset:3px}
+
+.btn-danger   {background:#C24138;color:#fff}
+.btn-danger:hover{background:#9E3129}
+
+.btn-sm{height:38px;padding:0 17px;font-size:14.5px}
+.btn-lg{height:56px;padding:0 30px;font-size:17.5px}
+
+.btn:disabled{background:#EDF2F7;color:#697B8C;border-color:transparent;cursor:not-allowed}
+.btn:focus-visible{outline:3px solid #008C76;outline-offset:2px}</pre>
+</div></section>
+
+<footer><div class="wrap">
+  <span>Big Circle Auctions brand assets</span>
+  <span>A <a href="https://cospark.us">CoSpark</a> company</span>
+</div></footer>
+</body>
+</html>
