@@ -22,11 +22,8 @@ img{display:block;max-width:100%}
 /* masthead */
 .mast{border-bottom:1px solid var(--hairline);background:var(--paper);position:sticky;top:0;z-index:10}
 .mast .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:18px;padding-bottom:18px}
-.mast a.home{display:flex;align-items:center;gap:13px;color:var(--ink)}
-.mast .tile{width:38px;height:38px;flex:none}
-.mast .nm{display:flex;flex-direction:column;gap:2px}
-.mast .nm b{font-family:var(--mark);font-size:21px;font-weight:800;letter-spacing:-.022em;line-height:.84}
-.mast .nm i{font-family:var(--mark);font-size:6.86px;font-weight:500;font-style:normal;letter-spacing:.5em;margin-left:.206em;color:var(--copper)}
+.mast a.home{display:flex;align-items:center;color:var(--ink)}
+.mast .lockup{height:49px;width:auto;flex:none}
 .mast nav{display:flex;flex-wrap:wrap;gap:26px;font-size:14px;font-weight:600;letter-spacing:.09em;text-transform:uppercase}
 .mast nav a{color:var(--slate-600)}
 .mast nav a:hover{color:var(--ink)}
@@ -46,11 +43,11 @@ h3{font-family:var(--display);font-weight:600;font-size:25px;line-height:1.2;let
 .sub{font-size:18px;line-height:1.6;color:var(--slate-700);max-width:66ch;margin:12px 0 0;text-wrap:pretty}
 
 /* index cards */
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(272px,1fr));gap:1px;background:var(--hairline);border:1px solid var(--hairline);margin-top:38px}
-.card{background:var(--paper);padding:34px 30px;display:flex;flex-direction:column;gap:10px;min-height:200px;transition:background .12s}
+.cards{display:grid;grid-template-columns:1fr;gap:1px;background:var(--hairline);border:1px solid var(--hairline);margin-top:38px}
+.card{background:var(--paper);padding:30px;display:flex;flex-direction:column;gap:8px;transition:background .12s}
 .card:hover{background:var(--panel)}
 .card .k{font-family:var(--display);font-size:26px;font-weight:700;letter-spacing:-.025em;line-height:1.1;color:var(--ink)}
-.card p{margin:0;font-size:16.5px;color:var(--slate-700);line-height:1.55}
+.card p{margin:0;font-size:clamp(16px,1.15vw,19px);color:var(--slate-700);line-height:1.55}
 .card .go{margin-top:auto;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--patina-deep)}
 .card.soon .k,.card.soon p,.card.soon .go{color:var(--slate-500)}
 
@@ -82,6 +79,7 @@ h3{font-family:var(--display);font-weight:600;font-size:25px;line-height:1.2;let
 /* rules list */
 .rules{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1px;background:var(--hairline);border:1px solid var(--hairline);margin-top:34px}
 .rules div{background:var(--paper);padding:30px 28px}
+.rules.stack{grid-template-columns:1fr}
 .rules h4{font-family:var(--display);font-size:22px;font-weight:700;letter-spacing:-.02em;margin:0 0 9px;line-height:1.2;color:var(--ink)}
 .rules p{margin:0;font-size:16.5px;color:var(--slate-700);line-height:1.55}
 
